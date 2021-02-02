@@ -1,0 +1,187 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+h1 {
+  position: relative;
+  font-size: 30px;
+  bottom: 230px;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid #ffffff;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav__item {
+  margin-top: 20px;
+}
+
+.nav__item a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 200ms ease-in;
+}
+
+.nav__item a:hover {
+  box-shadow: 0 4px 0 -2px #ffffff;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  top: 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.description {
+  width: 550px;
+  height: 150px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 80px;
+  background-color: #000;
+  padding: 30px 20px 0 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.image::after {
+  content: " ";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.static {
+  background-color: #000;
+  height: 150px;
+}
+
+.static img {
+  width: 80px;
+}
+
+.contact {
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact__controls input {
+  margin: 20px;
+}
+
+.contact__controls label {
+  display: block;
+}
+
+button {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bg1::after {
+  background-image: url('../assets/images/background-d1.jpg');
+}
+
+.bg2::after {
+  background-image: url('../assets/images/background-d2.png');
+}
+
+.bg3::after {
+  background-image: url('../assets/images/background-v3.jpg');
+}
+
+.bg4::after {
+  background-image: url('../assets/images/background-zero.png');
+}
+
+.bg5::after {
+  background-image: url('../assets/images/background-udg.jpg');
+}
+
+.bg6::after {
+  background-image: url('../assets/images/background-company.png');
+  background-size: 1800px;
+  background-position: top;
+}
+
+.bg7::after {
+  background-image: url('../assets/images/background-contact.jpg');
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+
+  body {
+    background-color:#000;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  .description {
+    text-align: justify;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    width: auto;
+    top: 220px;
+  }
+
+  .section.static {
+    display: none;
+  }
+
+  .bg6::after {
+    background-size: 1000px;
+  }
+
+  .contact {
+    width: 300px;
+    bottom: 100px;
+  }
+}
