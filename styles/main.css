@@ -105,6 +105,7 @@ h1 {
 
 .contact__controls input {
   margin: 20px;
+  padding: 5px;
 }
 
 .contact__controls label {
@@ -164,24 +165,40 @@ button {
 
   .description {
     text-align: justify;
-    padding: 10px 20px;
+    padding: 5px 10px 40px 10px;
     border: none;
     border-radius: 0;
-    height: auto;
     width: auto;
     top: 220px;
+  }
+
+  .section {
+    height: 70vh;
   }
 
   .section.static {
     display: none;
   }
 
+  .bg5::after {
+    background-size: 500px;
+    background-position: center;
+  }
+
+  #danganronpa-udg .description {
+    top: 255px;
+  }
+
+  #danganronpa-1 h1 {
+    bottom: 170px;
+  }
+
   .bg6::after {
-    background-size: 1000px;
+    background-size: 1100px;
   }
 
   .contact {
     width: 300px;
-    bottom: 100px;
+    bottom: 0;
   }
 }
